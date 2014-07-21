@@ -1,0 +1,59 @@
+<!-- http://answers.ros.org/question/12434/using-roslaunch-to-run-distributed-systems-over-ssh/  -->
+<!--#192.168.0.113   p3at-1
+    #192.168.0.246   p3at-2
+    #192.168.0.191   p3at-3
+    #192.168.0.254   p3at-4
+    #192.168.0.160   p3at-5
+-->
+
+
+
+<launch>
+    <!--RUN export ROSLAUNCH_SSH_UNKNOWN=1 FIRST-->
+    <!--<env name="ROS_MASTER_URI" value="http://192.168.0.119:11311"/>--> 
+
+    <!--********************LOCAL MACHINE*********************-->
+    <machine name="feiliu" address="192.168.0.119"  user="feiliu" env-loader="/opt/ros/hydro/env.sh" default="false" />   <!-- ros-root="$(env ROS_ROOT)" -->
+    <!--**********REMOTE MACHINES (ONBOARD COMPUTER)**********-->
+    <machine name="p3at-1" address="192.168.0.113"  password="marhes" user="pioneer" env-loader="/opt/ros/hydro/env.sh" default="false"><!---->
+    </machine>
+    <machine name="p3at-2" address="192.168.0.246" user="pioneer" password="marhes"  env-loader="/opt/ros/hydro/env.sh">
+    </machine>
+    <machine name="p3at-3" address="192.168.0.191" user="pioneer" password="marhes"  env-loader="/opt/ros/hydro/env.sh">
+    </machine>
+    <machine name="p3at-4" address="192.168.0.254" user="pioneer" password="marhes"  env-loader="/opt/ros/hydro/env.sh">
+    </machine>
+    <machine name="p3at-5" address="192.168.0.160" user="pioneer" password="marhes"  env-loader="/opt/ros/hydro/env.sh">
+    </machine>
+
+
+
+    <!--********************RUN NODES HERE********************-->
+    <!--    <node pkg="openni_launch" type="rob_key" name="rob_key" machine="p3at-5" output="screen">
+    </node>  -->     
+
+    <!--<include file="$(find /rosaria)/robotDemo" machine="p3at-2"/>-->
+   <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" machine="p3at-5" output="screen"/>
+    <!--/opt/ros/hydro/share/openni_launch-->
+     <!--<node machine="p3at-2" pkg="rosaria" type="robotDemo" name="robotDemo"  output="screen" args="_port:=/dev/ttyS0" >      
+    </node>    -->
+
+
+    <!--required="true" output="screen"-->
+
+    <!-- more default parameters can be changed here -->
+    <!--<arg name="port" value="_port:=/dev/ttyS0" /> <param name="port" value="/dev/ttyS0"/>-->
+
+    <!-- ros-root="$(env ROS_ROOT)" ros-package-path="$(env ROS_PACKAGE_PATH)"  default="true" -->
+    <!--machine="p3at-4" args="_port:=/dev/ttyS0"  --> 
+    <!--<machine name="p3at-4" address="192.168.0.160"  password="marhes"  user="pioneer" />-->
+    <!--<node machine="p3at-4" name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" />-->
+    <!--<node name="RosAria" pkg="rosaria" type="RosAria"/>-->
+    <!--<node name="rob_key" pkg="rosaria" type="rob_key" />-->
+    <!-- This can run on local computer  -->
+    <!--<node name="test_cmd" pkg="rosaria" type="test_cmd" />-->
+
+    <!--<node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" />-->
+
+    <!--<param name="param" value="$(arg port)"/>  -->
+</launch>
