@@ -1,6 +1,5 @@
 #include "AriaRobot.h"
 
-
 int main( int argc, char** argv )
 {
   ros::init(argc,argv, "RosAria_local");
