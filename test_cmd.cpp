@@ -1,3 +1,7 @@
+/**************************************************
+ A simple demo showing how to control robot via command
+**************************************************/
+
 #include <ros/ros.h>
 //#include "Package/MessageType.h"
 #include "geometry_msgs/Twist.h"
