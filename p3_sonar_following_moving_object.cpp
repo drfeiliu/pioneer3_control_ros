@@ -9,6 +9,7 @@
               the comments are renewed  
 ***********************************************/
 
+
 /*         sensor_msgs/PointCloud
 # This message holds a collection of 3d points, plus optional additional
 # information about each point.
