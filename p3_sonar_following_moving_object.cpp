@@ -26,6 +26,7 @@ geometry_msgs/Point32[] points
 # Channel names in common practice are listed in ChannelFloat32.msg.
 ChannelFloat32[] channels
 */
+
 /* example of output
 http://docs.ros.org/api/sensor_msgs/html/msg/PointCloud.html
 channels: []
