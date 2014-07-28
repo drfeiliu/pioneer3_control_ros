@@ -132,7 +132,6 @@ http://stanford-ros-pkg.googlecode.com/svn-history/r146/trunk/recyclerbot/src/ob
 //offset  :160 220 240 240 240 240 220 160
 /*******about the rays and distance*******/
 
-
 #include <ros/ros.h>
 #include <sensor_msgs/PointCloud.h>   //for sonar data
 #include "geometry_msgs/Twist.h"
