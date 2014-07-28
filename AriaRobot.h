@@ -9,7 +9,6 @@
                add the function that you can choose which robot to control:
                ros::Subscriber cmdvel_sub_p0_119;//192.168.0.119 is the default
                IP address of local computer
- 
 **************************************************************************/
 #include <stdio.h>
 #include <math.h>
