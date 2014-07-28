@@ -35,6 +35,7 @@
 #include "stdio.h"
 #include "string.h"
 
+
 void ScanKinect_CameraInfo(const sensor_msgs::CameraInfo::ConstPtr &camera_info)
 {
     //print out some information 
