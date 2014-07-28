@@ -1,5 +1,5 @@
 <package>
-  <name>rosaria</name>
+  <name>Pioneer3_Control_ROS</name>
   <version>0.9.0</version>
   <description>
     <tt>ROSARIA</tt> provides a ROS interface for most Adept MobileRobots, 
@@ -39,6 +39,8 @@
   <run_depend>sensor_msgs</run_depend>
   <run_depend>tf</run_depend>
   <run_depend>dynamic_reconfigure</run_depend>
+  
+  
   <!-- <test_depend>Aria</test_depend>
   <test_depend>roscpp</test_depend>
   <test_depend>nav_msgs</test_depend>
