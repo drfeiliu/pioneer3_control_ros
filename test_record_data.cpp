@@ -2,7 +2,7 @@
    Data:      2014-02-06
    Author:    Fei Liu
    File:      tet_record_data.cpp
-   Function:  Read (subscribe) data and show it
+   Function:  Read (subscribe) position data and show it
   
 ***********************************************/
 #include <ros/ros.h>
