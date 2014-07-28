@@ -1,5 +1,5 @@
 <package>
-  <name>Pioneer3_Control_ROS</name>
+  <name>pioneer3_control_ros</name>
   <version>0.9.0</version>
   <description>
     <tt>ROSARIA</tt> provides a ROS interface for most Adept MobileRobots, 
