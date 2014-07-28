@@ -7,6 +7,7 @@ Function  : the robot will wander in an obstacle placed
             "ESC" to stop.
 *****************************************************/
 
+
 #include "AriaRobot.h"
 
 
@@ -24,7 +25,6 @@ int main( int argc, char** argv )
   }
   ROS_INFO( "\nThe robot is wandering now!\n\n**************************************************\n\n\t\tPlease Press ESC to STOP! \n\n**************************************************" );
 
-  //node->spin();
   node->robotWander(); 
   delete node;
 
