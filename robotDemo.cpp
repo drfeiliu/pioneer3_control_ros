@@ -1,3 +1,6 @@
+/******************************************
+ A simple demo for controlling robots
+ ****************************************/
 #include "AriaRobot.h"
 
 
