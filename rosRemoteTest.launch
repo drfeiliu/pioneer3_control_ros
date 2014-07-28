@@ -27,19 +27,11 @@
     </machine>
 
 
-
-    <!--********************RUN NODES HERE********************-->
-    <!--    <node pkg="openni_launch" type="rob_key" name="rob_key" machine="p3at-5" output="screen">
-    </node>  -->     
-
     <!--<include file="$(find /rosaria)/robotDemo" machine="p3at-2"/>-->
    <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" machine="p3at-5" output="screen"/>
     <!--/opt/ros/hydro/share/openni_launch-->
      <!--<node machine="p3at-2" pkg="rosaria" type="robotDemo" name="robotDemo"  output="screen" args="_port:=/dev/ttyS0" >      
     </node>    -->
-
-
-    <!--required="true" output="screen"-->
 
     <!-- more default parameters can be changed here -->
     <!--<arg name="port" value="_port:=/dev/ttyS0" /> <param name="port" value="/dev/ttyS0"/>-->
