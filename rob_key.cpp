@@ -13,9 +13,7 @@ using geometry_msgs::Twist;
 using namespace std;
 
 ros::Publisher vel_pub;
-//=========added by Fei===
-//ros::Publisher movement_mode;
-//=========15.02/15=======
+
 ros::Time t1;
 Twist vel;
 int kfd = 0;
@@ -27,13 +25,14 @@ void quit(int sig)
      exit(0);
    }
 
+
+
 int main(int argc, char** argv)
 {
   ros::init(argc, argv, "rob_key");
   ros::NodeHandle n;
    vel_pub = n.advertise<Twist>("/RosAria/cmd_vel", 1);
-   //movement_mode = n.advertise<std::string>("/RosAria/movement_mode",100);
-     
+
    signal(SIGINT,quit);
    char c;
    bool dirty=false;
