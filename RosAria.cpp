@@ -2,7 +2,7 @@
 
 int main( int argc, char** argv )
 {
-  ros::init(argc,argv, "RosAria_local");
+  ros::init(argc,argv, "RosAria");
   ros::NodeHandle n(std::string("~"));
   Aria::init();
   RosAriaNode *node = new RosAriaNode(n);
