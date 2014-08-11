@@ -6,7 +6,7 @@
    Function:  Control multiple robots by keyboard.
    Description:
             1. Choose robot:
-               Press Q to select all robots or which robot to control
+               Press q ro s to select all robots or which robot to control
             2. control the robot(s)
                1) Press Up Arrow to move ahead
                2) Press Left Arrow to turn left
