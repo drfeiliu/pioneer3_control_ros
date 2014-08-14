@@ -25,7 +25,7 @@ Important tips：
 
   thus, even the same topics published in different robots have different name, e.g.,
   in local computer, 
-      topic "sonar" is named as "Ros_local/sonar"
+      topic "sonar" is named as "RosAria_local/sonar"
   while in another computer with IP address 192.168.0.254, the name is
       "RosAria_p3at_4_254/sonar".
       
