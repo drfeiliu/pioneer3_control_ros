@@ -112,3 +112,7 @@ add_dependencies(p3_sonar_following_moving_object rosaria_gencfg)
 add_dependencies(p3_sonar_following_moving_object rosaria_gencpp)
 target_link_libraries(p3_sonar_following_moving_object ${catkin_LIBRARIES} ${Boost_LIBRARIES} Aria pthread dl rt)
 
+add_executable(rob_key_multi_robot_con_separately rob_key_multi_robot_con_separately.cpp)
+add_dependencies(rob_key_multi_robot_con_separately rosaria_gencfg)
+add_dependencies(rob_key_multi_robot_con_separately rosaria_gencpp)
+target_link_libraries(rob_key_multi_robot_con_separately ${catkin_LIBRARIES} ${Boost_LIBRARIES} Aria pthread dl rt)
