@@ -2,7 +2,7 @@
    Date:      16, May, 2014
    Author:    Fei Liu
    
-   File:      rob_key_multi_robot_con_seperately.cpp
+   File:      rob_key_multi_robot_con_separately.cpp
    Function:  Control multiple robots by keyboard.
    Description:
             1. Choose robot:
@@ -99,7 +99,7 @@ void quit(int sig)
 
 int main(int argc, char** argv)
 {
-   ros::init(argc, argv, "rob_key_multi_robot_con_seperately");
+   ros::init(argc, argv, "rob_key_multi_robot_con_separately");
    ros::NodeHandle n;
    vel_pub_all = n.advertise<Twist>("/RosAria/cmd_vel", 1);
    vel_pub_p0_119 = n.advertise<Twist>("/RosAria/cmd_vel_p0_119", 1);
