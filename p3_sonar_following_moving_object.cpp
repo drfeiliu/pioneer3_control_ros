@@ -400,7 +400,8 @@ int main(int argc, char** argv)
   ros::Publisher vel_pub;
   vel_pub = n.advertise<Twist>("/RosAria/cmd_vel", 1);
 
-  ros::Subscriber get_sonar_data = n.subscribe<sensor_msgs::PointCloud>("RosAria/sonar", 100, Get_sonarData_Callback);
+  // please modify the topic name "/RosAria_p3at_1_113/sonar" according to the robot that are connected
+  ros::Subscriber get_sonar_data = n.subscribe<sensor_msgs::PointCloud>("/RosAria_p3at_1_113/sonar", 100, Get_sonarData_Callback);
 #ifdef DEBUG_PRINT
   printf("\n********** Sonar Readings: **********\n");
 #endif
