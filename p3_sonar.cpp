@@ -178,11 +178,8 @@ int main(int argc, char** argv)
   ros::init(argc, argv, "p3_sonar");
   ros::NodeHandle n;
 
-  // if it can't get the sonar data, try "rostopic list" to see
-  // what actualy the topic is, maybe it will be "/RosAria_local/sonar" which is 
-  // mostly in the simulation on MobileSim while in real robot it may be "/RosAria/sonar"
-  
-  ros::Subscriber get_sonar_data = n.subscribe<sensor_msgs::PointCloud>("RosAria/sonar", 100, get_sonarData_Callback);
+  //plsease modify the topic name "/RosAria_p3at_1_113/sonar" according to the robot connected
+  ros::Subscriber get_sonar_data = n.subscribe<sensor_msgs::PointCloud>("/RosAria_p3at_1_113/sonar", 100, get_sonarData_Callback);
   printf("\n********** Sonar Readings: **********\n");
 
   while (ros::ok())
